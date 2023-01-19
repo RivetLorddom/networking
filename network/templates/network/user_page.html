@@ -1,0 +1,31 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+{% block body %}
+
+    <div class="user-head">
+        <h1 class="name-of-user" id="this_user_username">{{ this_user.username }}</h1>
+        {% if user.is_authenticated and user != this_user %}
+            <button id="follow_button" class="btn btn-dark">Follow</button>
+        {% endif %}
+    </div>
+
+    <div class="user-stats">
+        <div class="followers">
+            <h3 class="followers-label">Followers</h3>
+            <h4 class="followers-count" id="followers_count">{{ this_user.followers.count }}</h4>
+        </div>
+        <div class="followers">
+            <h3 class="followers-label">Following</h3>
+            <h4 class="followers-count">{{ this_user.following.count }}</h4>
+        </div>
+    </div>
+
+    {% include "network/posts_render.html" %}
+
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'network/following.js' %}"></script>
+    <script src="{% static 'network/likes_and_edits.js' %}"></script>
+{% endblock%}

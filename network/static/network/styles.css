@@ -1,0 +1,234 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.body {
+    background-color: rgb(255, 255, 255);
+    padding: 5%;
+    padding-top: 2em;
+}
+
+.upper {
+    padding: 2em;
+    padding-top: 4em;
+    background-color: rgb(209, 236, 212);
+}
+
+.navbar {
+    line-height: 0.5em;
+    border-radius: 15px;
+    background-color: rgb(249 249 249);
+    padding-block: 1.5em;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    font-family: monospace;
+    padding-left: 1em;
+}
+
+hr {
+    margin: 30px -20px 20px;
+    border: 0;
+    border-top: 1px solid #c9c7c7;
+}
+
+.card {
+    margin: auto;
+    margin-bottom: 1.5em;
+    width: 80%;
+    max-width: 50em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(6, 6, 5, 0.024);
+}
+
+.postsdiv {
+    padding: auto;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    min-width: 20em;
+    border-radius: 5px;
+}
+
+.post-head {
+    width: auto;
+    margin-bottom: 1em;
+}
+
+.card-title {
+    font-size: 1.5em;
+    color:black;
+    white-space: nowrap;
+}
+
+.card-title:hover {
+    text-decoration: none;
+}
+
+.card-text {
+    margin-bottom: 2em;
+}
+
+.date {
+    float: right;
+    padding-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.pag-menu {
+    padding-block: 2em;
+}
+
+.page-link {
+    font-style: italic;
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.new-post {
+    width: auto;
+    align-items: center;
+    margin:auto;
+    margin-bottom: 0;
+}
+
+.new-post-form {
+    display: block;
+    margin: auto;
+    width: 80%;
+    background-color: rgba(6, 6, 5, 0.024);
+    padding: 1em 2em;
+    resize: none;
+    border: 2px solid #ccc;
+    border-bottom: none;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0;
+}
+
+#submit-btn {
+    display: block;
+    margin-top: 0;
+    width: 80%;
+    margin: auto;
+    padding-inline: auto;
+    border: 2px solid #000;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.like_button {
+    padding: 0;
+    padding-right: 0.3em;
+    padding-left: 0.3em;
+    height: fit-content;
+    font-size: 1.3em;
+    margin-right: 0.7em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.like_button:focus, .edit_button:focus {
+    box-shadow: none;
+}
+
+.likes_number {
+    float: inline-end;
+    font-size: 1.2em;
+    color: rgb(88, 88, 88);
+    padding-right: 0.7em;
+    text-align: right;
+    margin: auto;
+}
+
+.logged-likes {
+    display:inline-flex;
+    border: 1.5px gray solid;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logged-likes:hover {
+    box-shadow: 0 0 0 0.03rem rgb(82 88 93 / 50%);
+}
+
+.edit_button, .save_button {
+    float: right;
+    margin-right: 10px;
+}
+
+.edit-area {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 5em;
+    background-color: rgba(6, 6, 5, 0.024);
+    resize: none;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.user-stats {
+    display:inline-flex;
+    position:relative;
+    width:100%;
+    margin: auto;
+    padding-inline: 3em;
+    padding-block: 1em;
+}
+
+.followers {
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+    width: 40%;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.followers-label {
+    border: 2px solid #ccc;
+    border-bottom: none;
+    border-top-left-radius: 15px;
+    margin: auto;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.786);
+    color: rgb(233, 233, 233);
+    font-size: 120%;
+}
+
+.followers-count {
+    border: 2px solid #ccc;
+    border-top: none;
+    margin: auto;
+    padding: 0.5em;
+    border-bottom-right-radius: 15px;
+}
+
+.user-head {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.name-of-user {
+    line-height: 1.5em;
+}
+
+#follow_button {
+    height: 100%;
+    padding-inline: 1.5em;
+    margin: auto;
+    margin-left: 2em;
+}
+
+.form-control {
+    margin-block: 1em;
+}

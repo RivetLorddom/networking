@@ -1,0 +1,33 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+{% block body %}
+
+{% if user.is_authenticated %}
+<form action="{% url 'index' %}" method="post">
+    {% csrf_token %}
+    {% for field in form %}
+    <div class="form-group">
+        {{ field.errors }}
+        {{ field.label_tag }} 
+        <div class="new-post">
+            {{ field }}
+        </div>
+        {% if field.help_text %}
+        <p class="help">{{ field.help_text|safe }}</p>
+        {% endif %}
+    </div>
+    {% endfor %}
+    <input id="submit-btn" class="btn btn-dark" type="submit" value="Submit">
+</form>
+{% endif %}
+
+<!-- show posts -->
+{% include "network/posts_render.html" %}
+
+
+{% endblock %}
+
+{% block script %}
+      <script src="{% static 'network/likes_and_edits.js' %}"></script>
+{% endblock %}
